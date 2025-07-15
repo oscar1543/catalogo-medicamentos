@@ -1,7 +1,7 @@
 const productos = [
   {
-    nombre: "Paracetamol 500mg",
-    precio: "$25.00",
+    nombre: "Xtandi 40mg",
+    precio: "$250.00",
     descripcion: "Caja con 20 tabletas",
     imagen: "https://via.placeholder.com/200x150?text=Paracetamol"
   },
