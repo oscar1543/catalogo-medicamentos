@@ -1,7 +1,7 @@
 const productos = [
   {
     nombre: "Xtandi 40mg",
-    precio: "$80,000",
+    precio: "$80000",
     descripcion: "Caja con 120 cápsulas",
     imagen: "https://https://dstamaria.com/cdn/shop/products/xtandi-40.png?v=1740597947&width=493"
   },
