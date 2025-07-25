@@ -1,8 +1,8 @@
 const productos = [
   {
     nombre: "Xtandi 40mg",
-    precio: "$250.00",
-    descripcion: "Caja con 20 tabletas",
+    precio: "$80,000",
+    descripcion: "Caja con 120 cápsulas",
     imagen: "https://https://dstamaria.com/cdn/shop/products/xtandi-40.png?v=1740597947&width=493"
   },
   {
