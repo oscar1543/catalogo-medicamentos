@@ -70,7 +70,7 @@ function renderizarProductos(lista) {
 function cotizar(nombreProducto) {
   const numeroWhatsApp = "5213328070507"; // Cambia esto por tu número real
   const mensaje = encodeURIComponent(`Hola, me gustaría solicitar cotización del producto: ${nombreProducto}`);
-  const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+  const url = `https://wa.me/${5213328070507}?text=${mensaje}`;
   window.open(url, '_blank');
 }
 
