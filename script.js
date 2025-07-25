@@ -70,7 +70,7 @@ function renderizarProductos(lista) {
 
 // Función para redirigir a WhatsApp con el producto seleccionado
 function cotizar(nombreProducto) {
-  const numeroWhatsApp = "5213328070507"; // Reemplaza con tu número real en formato internacional
+  const numeroWhatsApp = "5215512345678"; // Reemplaza con tu número real en formato internacional
   const mensaje = encodeURIComponent(`Hola, me gustaría solicitar cotización del producto: ${nombreProducto}`);
   const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
   window.open(url, '_blank');
@@ -82,6 +82,12 @@ document.getElementById("buscador").addEventListener("input", e => {
     p.nombre.toLowerCase().includes(texto) || 
     p.descripcion.toLowerCase().includes(texto)
   );
+  renderizarProductos(filtrados);
+});
+
+renderizarProductos(productos);
+</script>
+
   renderizarProductos(filtrados);
 });
 
