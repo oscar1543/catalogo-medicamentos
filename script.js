@@ -3,7 +3,7 @@ const productos = [
     nombre: "Xtandi 40mg",
     precio: "$250.00",
     descripcion: "Caja con 20 tabletas",
-    imagen: "https://via.placeholder.com/200x150?text=Paracetamol"
+    imagen: "https://https://dstamaria.com/cdn/shop/products/xtandi-40.png?v=1740597947&width=493"
   },
   {
     nombre: "Ibuprofeno 400mg",
