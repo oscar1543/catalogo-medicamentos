@@ -1,9 +1,10 @@
+<script>
 const productos = [
   {
     nombre: "Xtandi 40mg",
     precio: "$80,000.00",
     descripcion: "Caja con 120 cápsulas",
-    imagen: "https://https://dstamaria.com/cdn/shop/products/xtandi-40.png?v=1740597947&width=493"
+    imagen: "https://dstamaria.com/cdn/shop/products/xtandi-40.png?v=1740597947&width=493"
   },
   {
     nombre: "Ibuprofeno 400mg",
@@ -17,7 +18,36 @@ const productos = [
     descripcion: "Caja con 14 cápsulas",
     imagen: "https://via.placeholder.com/200x150?text=Omeprazol"
   },
-  // Agrega más productos aquí
+  {
+    nombre: "Paracetamol 500mg",
+    precio: "$30.00",
+    descripcion: "Caja con 20 tabletas",
+    imagen: "https://via.placeholder.com/200x150?text=Paracetamol"
+  },
+  {
+    nombre: "Losartán 50mg",
+    precio: "$60.00",
+    descripcion: "Caja con 30 tabletas",
+    imagen: "https://via.placeholder.com/200x150?text=Losartán"
+  },
+  {
+    nombre: "Amoxicilina 500mg",
+    precio: "$55.00",
+    descripcion: "Caja con 21 cápsulas",
+    imagen: "https://via.placeholder.com/200x150?text=Amoxicilina"
+  },
+  {
+    nombre: "Metformina 850mg",
+    precio: "$45.00",
+    descripcion: "Caja con 28 tabletas",
+    imagen: "https://via.placeholder.com/200x150?text=Metformina"
+  },
+  {
+    nombre: "Vitamina C 1000mg",
+    precio: "$50.00",
+    descripcion: "Caja con 10 tabletas efervescentes",
+    imagen: "https://via.placeholder.com/200x150?text=Vitamina+C"
+  }
 ];
 
 const contenedor = document.getElementById("catalogo");
@@ -38,14 +68,22 @@ function renderizarProductos(lista) {
   });
 }
 
+// Función para redirigir a WhatsApp con el producto seleccionado
 function cotizar(nombreProducto) {
-  alert(`Solicitud de cotización para: ${nombreProducto}`);
+  const numeroWhatsApp = "5215512345678"; // Reemplaza con tu número real en formato internacional
+  const mensaje = encodeURIComponent(`Hola, me gustaría solicitar cotización del producto: ${nombreProducto}`);
+  const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
+  window.open(url, '_blank');
 }
 
 document.getElementById("buscador").addEventListener("input", e => {
   const texto = e.target.value.toLowerCase();
-  const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(texto));
+  const filtrados = productos.filter(p => 
+    p.nombre.toLowerCase().includes(texto) || 
+    p.descripcion.toLowerCase().includes(texto)
+  );
   renderizarProductos(filtrados);
 });
 
 renderizarProductos(productos);
+</script>
